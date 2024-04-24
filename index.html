@@ -150,6 +150,63 @@
     <button id="view" onclick="view()">click here to view the score</button>
     <div id="score" class="score1"></div>
     <a id="view2" href="certificate.html">CLICK HERE TO GET CERTIFICATE</a>
+    <script>
+    var x=0
+var y=0
+var z=8
+function correct1(){
+    x+=1
+    y+=1
+    document.getElementById('sub1').innerHTML='<div id="section1">\
+        <h3 id="question1">Q-1 Which of the three banks will be merged with the other two to create Indias third-largest bank?</h3>\
+        <div class="content">\
+            <ol type="A">\
+                <li id="option1a"><button  >Punjab National Bank</button></li>\
+                <li id="option1b"><button  >Indian Bank</button></li>\
+                <li id="option1c"><button  >Bank of Baroda</button></li>\
+                <li id="option1d"><button  >Dena Bank</button></li>\
+            </ol>\
+            <div class="information" id="info1">Punjab National Bank (abbreviated as PNB) is an Indian public sector bank based in New Delhi. The bank was founded in May 1894 and is the second largest public sector bank in India in terms of its business volumes and second largest in terms of its network. The bank has over 180 million customers, 12,248 branches, and 13,000+ ATMs.</div>\
+        </div>\
+    </div>';
+    document.getElementById('option1b').style.border='red solid 3px';
+    document.getElementById('option1a').style.backgroundColor='green';
+    document.getElementById('option1c').style.border='red solid 3px';
+    document.getElementById('option1d').style.border='red solid 3px';
+        document.getElementById('info1').style.display='block';
+        document.getElementById('info1').style.animationName='anim2';
+        document.getElementById('info1').style.animationDuration='1s';
+        document.getElementById('info1').style.transform='translateX(0px)'
+
+
+}
+
+
+function incorrect1(){
+    y+=1
+    document.getElementById('sub1').innerHTML='<div id="section1">\
+    <h3 id="question1">Q-1 Which of the three banks will be merged with the other two to create Indias third-largest bank?</h3>\
+    <div class="content">\
+        <ol type="A">\
+            <li id="option1a"><button  >Punjab National Bank</button></li>\
+            <li id="option1b"><button  >Indian Bank</button></li>\
+            <li id="option1c"><button  >Bank of Baroda</button></li>\
+            <li id="option1d"><button  >Dena Bank</button></li>\
+        </ol>\
+        <div class="information" id="info1">Punjab National Bank (abbreviated as PNB) is an Indian public sector bank based in New Delhi. The bank was founded in May 1894 and is the second largest public sector bank in India in terms of its business volumes and second largest in terms of its network. The bank has over 180 million customers, 12,248 branches, and 13,000+ ATMs.</div>\
+    </div>\
+</div>';
+    document.getElementById('option1a').style.backgroundColor='green';
+    document.getElementById('option1b').style.backgroundColor='red';
+    document.getElementById('option1c').style.backgroundColor='red';
+    document.getElementById('option1d').style.backgroundColor='red';
+    document.getElementById('info1').style.display='block';
+    document.getElementById('info1').style.animationName='anim2';
+    document.getElementById('info1').style.animationDuration='1s';
+    document.getElementById('info1').style.transform='translateX(0px)'
+    
+}
+    </script>
 
 </body>
 </html>
