@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
-</head>
-<style>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+    </head>
+    <style>
       body
         {
-            background-image: url(q.webp);
+            background-image: url(template.png);
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.844);
             background-repeat: no-repeat;
@@ -125,74 +124,72 @@
         border-color: rgb(255, 255, 255);
       }
     </style>
-<body>
-    <nav class="navbar navbar-expand-xl">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <span id="q">QUIZ</span>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" onclick="myFunction1()"><span>Home</span></a>
+    <body>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <span id="q">QUIZ</span>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="myFunction1()"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="myFunction2()"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="myFunction3()"><span>Services</span></a>
+                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="myFunction4()"><span>Contacts</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal" id="btn1">Login</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="myFunction2()"><span>About</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="myFunction3()"><span>Services</span></a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="myFunction4()"><span>Contacts</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal" id="btn1">Login</a>
-                </li>
-                </ul>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+        <a href="quiz_page.html" class="btn btn-lg" id="start">Start Quiz</a>
+
+
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                  <h1>Login</h1>
               </div>
-        </div>
-    </nav>
-    <a href="project1.html" class="btn btn-lg" id="start">Start Quiz</a>
-
-
-    <div class="modal" id="myModal">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header">
-              <h1>Login</h1>
-          </div>
-          <div class="modal-body">
-              <form action="home2.html">
-                  <div>
-                      <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                  </div><br>
-                  <div>
-                      <label for="pwd" class="form-label">Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                  </div><br><br>
-                  <button class="btn" onclick="myFunction5()" id="btn2">Sign up</button>
-              </form>
-          </div>
-          <div class="modal-footer">
-          </div>
-  <script>
-    function myFunction1() {
-    swal("WELCOME! This is the Home Page");
-    }  
-    function myFunction2() {
-    swal("This is an interactive quiz website made using HTML,CSS and javascript");
-    } 
-    function myFunction3() {
-    swal("Interactive quiz services offer engaging, knowledge-testing experiences with dynamic questionnaires and fostering user interaction for an immersive learning or entertainment environment.");
-    }  
-    function myFunction4() {
-    swal("Contacts","8623757188 , 9914478290");
-    } 
-    function myFunction5() {
-    alert("Sign up successful","You can start the quiz");
-    }         
-  </script>             
-
-    
-</body>
+              <div class="modal-body">
+                  <form action="home.html">
+                      <div>
+                          <label for="email" class="form-label">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div><br>
+                      <div>
+                          <label for="pwd" class="form-label">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      </div><br><br>
+                      <button class="btn" onclick="myFunction5()" id="btn2">Sign up</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+              </div>
+      <script>
+        function myFunction1() {
+        swal("WELCOME! This is the Home Page");
+        }  
+        function myFunction2() {
+        swal("This is an interactive quiz website made using HTML,CSS and javascript");
+        } 
+        function myFunction3() {
+        swal("Interactive quiz services offer engaging, knowledge-testing experiences with dynamic questionnaires and fostering user interaction for an immersive learning or entertainment environment.");
+        }  
+        function myFunction4() {
+        swal("Contacts","8623757188 , 9914478290");
+        } 
+        function myFunction5() {
+        alert("Sign up successful","You can start the quiz");
+        }         
+      </script>             
+    </body>
 </html>
