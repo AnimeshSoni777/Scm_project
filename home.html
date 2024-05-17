@@ -5,6 +5,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
     </head>
+    <title>Braniacs/Quizhub.com</title>
     <style>
       body
         {
@@ -17,7 +18,7 @@
         #btn2
         {
             color: white;
-            background-color: rgb(9, 9, 90);
+            background-color: rgb(5, 24, 99);;
             width: 400px;
             position: relative;
             left:25px;
@@ -25,7 +26,7 @@
         .modal-content
         {
             background: transparent;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(3px);
             border:solid;
             border-width: 2px;
             border-radius: 10px;
@@ -42,13 +43,16 @@
         }
       span
       {
-        color:white;
+        /color:white;/
+        color: rgb(0,0,0);
+        font-size: x-large;
       }
       #btn1
       {
-        color: white;
+        color: rgb(0,0,0);;
         margin-right: 75px;
         margin-left: 30px;
+        font-size: x-large;
       }
       form
       {
@@ -59,18 +63,19 @@
         border:solid;
         border-radius: 10px;
         border-width: 1px;
+        font-size: x-large;
         background-color: rgb(5, 24, 99);
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 700px;
+        left: 670px;
         top:500px;
-        transition: 1s;
+        transition: 0.4s;
         color: white;
         width: fit-content;
         animation-name:bubble;
-        animation: bubble 5s ease-out;
+        animation:alternate;
         animation-iteration-count: infinite;
         font-weight: 700;
       }
@@ -80,7 +85,7 @@
               transform: scale(1);
             }
             50% {
-              transform: scale(1.6);
+              transform: scale(1);
             }
             100% {
               transform: scale(1);
@@ -88,11 +93,12 @@
       }
       #start:hover
       {
-        letter-spacing: 0.1cm;
+        letter-spacing: 0cm;
         background-color: rgb(15, 154, 200);
-        box-shadow: 0px 0px 35px rgb(22, 90, 112);
-        width: 200px;
+        box-shadow: 0px 0px 0px rgb(22, 90, 112);
+        width:  fit-content;
         left: 670px;
+        font-size: x-large;
         
       }
       #navbarNav
@@ -105,11 +111,12 @@
         position: relative;
         margin-left: 40px;
       }
-      #q
+      #q    
       {
-        font-size: larger;
+        font-size:xxx-large;
         font-weight: 800;
         margin-left: 50px;
+        color: rgb(5, 24, 99);
       }
       #alert
       {
@@ -123,12 +130,13 @@
         border-width: 1px;
         border-color: rgb(255, 255, 255);
       }
+      
     </style>
     <body>
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <span id="q">QUIZ</span>
+                  <span id="q">QuizHub</span>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#" onclick="myFunction1()"><span>Home</span></a>
@@ -150,8 +158,7 @@
             </div>
         </nav>
         <a href="quiz_page.html" class="btn btn-lg" id="start">Start Quiz</a>
-
-
+        
         <div class="modal" id="myModal">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -174,18 +181,19 @@
               </div>
               <div class="modal-footer">
               </div>
+      
       <script>
         function myFunction1() {
-        swal("WELCOME! This is the Home Page");
+        swal("WELCOME USER !!! \n\nYou are currently on Home Page.");
         }  
         function myFunction2() {
-        swal("This is an interactive quiz website made using HTML,CSS and javascript");
+        swal("We are the Braniacs.pvt.ltd presents you the ' QUIZHUB ' offers an engaging learning experience, encouraging active participation and involvement in the learning process. ");
         } 
         function myFunction3() {
         swal("Interactive quiz services offer engaging, knowledge-testing experiences with dynamic questionnaires and fostering user interaction for an immersive learning or entertainment environment.");
         }  
         function myFunction4() {
-        swal("Contacts","8623757188 , 9914478290");
+        swal("Contacts","For support and feedback: 8168419926 / 7666119567 \n\nFor issues and help: 9406355637 / 7696535540");
         } 
         function myFunction5() {
         alert("Sign up successful","You can start the quiz");
